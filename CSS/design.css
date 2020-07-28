@@ -461,7 +461,7 @@ body {
 
 /* Why hapolearn */
 
-.why-hapo {
+.choose-hapo {
     width: 100%;
     height: 650px;
     background-image: url("../Image/backgr.png");
@@ -492,6 +492,7 @@ body {
 }
 
 .laptop-img {
+    width: 100%;
     padding-top: 10%;
 }
 
