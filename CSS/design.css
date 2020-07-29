@@ -12,6 +12,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'UTM B';
+    src: url(../Font/UTMBryantLG_B.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
 body {
     width: 100%;
     display: flex;
@@ -33,11 +40,17 @@ body {
 }
 
 .hapo-header img {
-    padding: 30px;
+    padding: 40px;
+    padding-left: 60px;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: end;
 }
 
 .menu li {
-    display: inline-block;
     list-style-type: none;
 }
 
@@ -52,11 +65,6 @@ body {
 }
 
 .menu li :hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.menu .all-course {
     background-color: #B2D235;
     border-radius: 17px;
     color: #ffffff;
@@ -78,39 +86,40 @@ body {
 .hapo-banner-img {
     position: absolute;
     width: 100%;
-    height: auto;
     z-index: -1;
+    /* background-image: linear-gradient(white, #E5E5E5); */
 }
 
 .banner-text {
-    font: normal normal "UTM";
+    font: normal normal 'UTM';
     color: #11114E;
-    letter-spacing: -0.05em;
     margin-left: 40px;
     justify-content: center;
     margin-top: 15%;
+    margin-left: 4%;
     -webkit-text-stroke: 0.5px;
 }
 
 .big-content {
-    font-size: 35px;
-    -webkit-text-stroke: 0.5px;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: -0.05em;
 }
 
 .medium-content {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 61px;
     margin-bottom: 5px;
     -webkit-text-stroke: 0.3px;
 }
 
 .small-content {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    list-style: 25px;
+    letter-spacing: -0.05em;
     -webkit-text-stroke: 0.5px;
-}
-
-.small-content {
-    font-size: 15px;
-    line-height: 25px;
     color: #505353;
 }
 
@@ -119,9 +128,10 @@ body {
     background-color: #B2D235;
     padding: 13px 67px 20px 67px;
     border-radius: 35px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #ffffff;
+    text-decoration: none;
 }
-
 
 /*Footer*/
 
@@ -173,8 +183,16 @@ body {
     width: 50%;
 }
 
+.left-list ul li :hover {
+    text-decoration: underline;
+}
+
 .footer-list .right-list {
     width: 50%;
+}
+
+.right-list ul li :hover {
+    text-decoration: underline;
 }
 
 .left-list ul li {
@@ -193,7 +211,6 @@ body {
 .right-list ul li {
     list-style-type: none;
     margin-bottom: 30px;
-    margin: 10px;
 }
 
 .right-list-button {
@@ -224,7 +241,7 @@ body {
     background-color: #454545;
     font-size: 15px;
     line-height: 18px;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.05em;
 }
 
 
@@ -242,11 +259,11 @@ body {
 .main-course .html-course {
     width: 30%;
     height: 100%;
-    margin-left: 100px;
+    margin-left: 10%;
     margin-right: 30px;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -272,7 +289,7 @@ body {
     margin-right: 30px;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -295,10 +312,10 @@ body {
 .main-course .php-course {
     width: 30%;
     height: 100%;
-    margin-right: 100px;
+    margin-right: 10%;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -326,6 +343,12 @@ body {
     background-color: #B2D235;
     border-radius: 35px;
     padding: 9px 37px 11px 37px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.lear-button :hover{
+    background-color: #264704;
 }
 
 .green-text {
@@ -344,17 +367,25 @@ body {
 /*Other course*/
 
 .other-course-text {
+    width: 100%;
     font: normal bold 60px 'UTM';
     text-align: center;
-    padding-top: 100px;
+    margin-top: 5%;
     color: #11114E;
 }
 
-.other-course-text button {
+.other-course-text .other-course-button {
+    height: 40px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+.other-course-text .other-course-button button {
+    /* margin-top: -10px; */
     background-color: #B2D235;
     border-radius: 3px;
     height: 8px;
-    width: 480px;
+    width: 400px;
 }
 
 .other-course {
@@ -370,11 +401,11 @@ body {
 .other-course .css-course {
     width: 30%;
     height: 100%;
-    margin-left: 100px;
+    margin-left: 10%;
     margin-right: 30px;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -400,7 +431,7 @@ body {
     margin-right: 30px;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -416,11 +447,10 @@ body {
 
 .other-course .java-course {
     width: 30%;
-    height: 100%;
-    margin-right: 100px;
+    margin-right: 10%;
     background-image: url("../Image/boxcourse.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 7px;
 }
 
@@ -453,7 +483,7 @@ body {
 
 .text-all-courses a {
     text-decoration: none;
-    font: normal bold 35px/49px 'UTM';
+    font: normal bold 40px/49px 'UTM';
     letter-spacing: -0.02em;
     color: #90AB26;
 }
@@ -466,24 +496,27 @@ body {
     height: 650px;
     background-image: url("../Image/backgr.png");
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
 }
 
 .why-hapolearn {
-    width: 60%;
-    font: normal normal 16px/25px 'UTM';
+    width: 100%;
+    font: normal normal 20px/25px 'UTM';
     color: #ffffff;
     letter-spacing: -0.05em;
 }
 
 .laptop-image {
+    height: 30%;
     margin-top: -230px;
     margin-left: 0;
+    margin-bottom: 303px;
 }
 
 .why-hapo li {
     list-style-type: none;
-    margin-left: 20px;
+    margin-left: 200px;
     margin-right: 10px;
 }
 
@@ -493,12 +526,14 @@ body {
 
 .laptop-img {
     width: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .why-hapo .why-hapolearn b {
-    font-size: 45px;
-    margin-left: 60px;
+    font-size: 70px;
+    line-height: 86px;
+    margin-left: 160px;
+    font-weight: bold;
 }
 
 
@@ -508,6 +543,8 @@ body {
     width: 100%;
     height: 400px;
     background-image: url(../Image/Member.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -523,7 +560,7 @@ body {
     letter-spacing: -0.02em;
 }
 
-.start-learning2 a button {
+.start-learning2 a {
     background-color: #ffffff;
     color: #90AB26;
     font: normal bold 30px/37px 'UTM';
@@ -531,6 +568,11 @@ body {
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
     padding: 10px 55px 15px 55px;
+    text-decoration: none;
+}
+
+.start-learning2 a :hover {
+    background-color: #7F7F7F;
 }
 
 
@@ -607,101 +649,125 @@ body {
 
 /* Feedback */
 
-.feedback {
+.body-feedback {
+    height: 721px;
     width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: column;
+  }
+  .body-feedback-title {
+    height: 50%;
     text-align: center;
-    align-items: center;
-    margin: 0;
-}
-
-.feedback-text {
-    font: normal bold 60px/74px 'UTM';
-    letter-spacing: -0.05em;
-    color: #11114E;
-    margin-top: -5px;
-    height: 30%;
-}
-
-.feedback-text h3 {
-    margin-bottom: -50px;
-}
-
-.feedback-text button {
-    width: 275px;
-    height: 10px;
-    background-color: #B2D235;
-    border-radius: 3px;
-}
-
-.feedback-text p {
-    font: normal normal 25px/31px 'UTM';
-    color: #505353;
+  }
+  .body-feedback-title-title {
+    font:bold 80px UTM BryantLG;
+    line-height: 98px;
     letter-spacing: -0.02em;
-}
-
-.usr-comment {
+    color: #11114E;
+    padding-top: 110px;
+    -webkit-text-stroke: 2px;
+  }
+  .body-feedback-title > hr {
+    background: #B2D235;
+    border-radius: 3px;
+    width: 328px;
+    height: 6px;
+    margin: 0 auto;
+  }
+  .body-feedback-title-content {
+    font:25px UTM BryantLG;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #505353;
+    margin: 23px 368px;
+  }
+  .body-feedback-content {
+    height: 50%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-}
-
-.number-one {
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .feedback-content-left {
     width: 50%;
-    background-image: url(../Image/box-feedback.png);
-    background-repeat: no-repeat;
-    padding: 10px 10px 0 40px;
-    background-size: auto;
-    margin-right: 10px;
-}
-
-.number-two {
-    width: 50%;
-    background-image: url(../Image/box-feedback.png);
-    background-repeat: no-repeat;
-    padding: 10px 40px 0 40px;
-    margin-left: 10px;
-}
-
-.fb-user-content p {
-    font: normal normal 16px/20px UTM;
-    text-align: left;
-    letter-spacing: -0.05em;
-}
-
-.fas {
-    font-size: 30px;
-    color: #969494;
-}
-
-.infor-user {
-    margin-top: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .add-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 595px;
+  }
+  .feedback-content-top {
+    font: 16px UTM BryantLG;
+    height: 190px;
+    width: 595px;
+    background-image: url("../images/Union.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.user-comment {
-    padding-top: 0;
-    margin-left: 20px;
-}
-
-.user-comment h3 {
-    font: normal bold 20px UTM BryantLG_B;
+  }
+  .feedback-content-top > img {
+    cursor: pointer;
+    line-height: 190px;
+    margin-left: -13px;
+  }
+  .feedback-content-top-right {
+    font: 16px UTM BryantLG;
+    height: 190px;
+    background-image: url("../images/Union.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback-content-top-right > img {
+    cursor: pointer;
+  }
+  
+  .feedback-content-button {
+  
+    display: flex;
+    flex-direction: row;
+  }
+  .font-username {
+    font:bold 20px UTM BryantLG;
+    line-height: 25px;
     color: #11114E;
-    margin-bottom: 0;
-}
-
-.user-comment p {
-    margin: 0;
-    font: normal bold 16px UTM BryantLG;
+  }
+  .font-programing-language {
+    font:bold 16px UTM BryantLG;
+    line-height: 20px;
     color: #505353;
-}
-
-.checked {
-    color: #F2C54F;
-}
+  }
+  .feedback-content-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-content-center {
+    margin: 0 120px 0 60px;
+    width: 500px;
+  }
+  .feedback-content-avt {
+    padding:18px 0 0 33px;
+    height: 60px;
+  }
+  .feedback-content-space {
+    padding:20px 0 0 10px;
+  }
+  .feedback-content-profile {
+    height: 60px;
+  }
+  .feedback-user {
+    display: flex;
+    flex-direction: row;
+  }
+  
 
 .mess {
     width: 360px;
