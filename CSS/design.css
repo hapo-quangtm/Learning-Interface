@@ -390,7 +390,7 @@ body {
 
 .other-course {
     width: 100%;
-    height: 470px;
+    height: 450px;
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
@@ -649,126 +649,121 @@ body {
 
 /* Feedback */
 
-.body-feedback {
-    height: 721px;
+.feedback {
     width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
-  }
-  .body-feedback-title {
-    height: 50%;
     text-align: center;
-  }
-  .body-feedback-title-title {
-    font:bold 80px UTM BryantLG;
-    line-height: 98px;
-    letter-spacing: -0.02em;
-    color: #11114E;
-    padding-top: 110px;
-    -webkit-text-stroke: 2px;
-  }
-  .body-feedback-title > hr {
-    background: #B2D235;
-    border-radius: 3px;
-    width: 328px;
-    height: 6px;
-    margin: 0 auto;
-  }
-  .body-feedback-title-content {
-    font:25px UTM BryantLG;
-    line-height: 31px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #505353;
-    margin: 23px 368px;
-  }
-  .body-feedback-content {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-  }
-  .feedback-content-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .add-padding {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 595px;
-  }
-  .feedback-content-top {
-    font: 16px UTM BryantLG;
-    height: 190px;
-    width: 595px;
-    background-image: url("../images/Union.png");
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  .feedback-content-top > img {
-    cursor: pointer;
-    line-height: 190px;
-    margin-left: -13px;
-  }
-  .feedback-content-top-right {
-    font: 16px UTM BryantLG;
-    height: 190px;
-    background-image: url("../images/Union.png");
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .feedback-content-top-right > img {
-    cursor: pointer;
-  }
-  
-  .feedback-content-button {
-  
-    display: flex;
-    flex-direction: row;
-  }
-  .font-username {
-    font:bold 20px UTM BryantLG;
-    line-height: 25px;
-    color: #11114E;
-  }
-  .font-programing-language {
-    font:bold 16px UTM BryantLG;
-    line-height: 20px;
-    color: #505353;
-  }
-  .feedback-content-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  .feedback-content-center {
-    margin: 0 120px 0 60px;
-    width: 500px;
-  }
-  .feedback-content-avt {
-    padding:18px 0 0 33px;
-    height: 60px;
-  }
-  .feedback-content-space {
-    padding:20px 0 0 10px;
-  }
-  .feedback-content-profile {
-    height: 60px;
-  }
-  .feedback-user {
-    display: flex;
-    flex-direction: row;
-  }
-  
+    margin: 0;
+}
 
+.feedback-text {
+    font: normal bold 60px/74px 'UTM';
+    letter-spacing: -0.05em;
+    color: #11114E;
+    margin-top: -5px;
+    height: 30%;
+}
+
+.feedback-text h3 {
+    margin-bottom: -50px;
+}
+
+.feedback-text button {
+    width: 275px;
+    height: 8px;
+    background-color: #B2D235;
+    border-radius: 3px;
+}
+
+.feedback-text p {
+    font: normal normal 25px/31px 'UTM';
+    color: #505353;
+    letter-spacing: -0.02em;
+}
+
+.usr-comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.number-one {
+    width: 50%;
+    background-image: url(../Image/Union.png);
+    background-repeat: no-repeat;
+    padding: 10px 10px 0 40px;
+    background-size: auto;
+    margin-right: 80px;
+    background-size: 100% 75%;
+}
+
+.number-two {
+    width: 50%;
+    background-image: url(../Image/Union.png);
+    background-repeat: no-repeat;
+    padding: 10px 40px 0 40px;
+    margin-left: 80px;
+    background-size: 100% 75%;
+}
+
+.mui-ten {
+    position: absolute;
+}
+
+.mui-ten-trai {
+    left: 320px;
+    top: 3548px;
+}
+
+.mui-ten-phai {
+    right: 273px;
+    top: 3548px;
+}
+
+.fb-user-content p {
+    font: normal normal 16px/20px UTM;
+    text-align: left;
+    letter-spacing: -0.05em;
+}
+
+.fas {
+    font-size: 30px;
+    color: #969494;
+}
+
+.infor-user {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.user-comment {
+    padding-top: -15px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.user-comment h3 {
+    font: normal bold 20px UTM BryantLG_B;
+    color: #11114E;
+    margin-bottom: 0;
+}
+
+.user-comment p {
+    margin: 0;
+    font: normal bold 16px UTM BryantLG;
+    color: #505353;
+}
+
+.checked {
+    color: #F2C54F;
+}
+
+/* Mess */
 .mess {
     width: 360px;
     height: auto;
@@ -779,16 +774,17 @@ body {
     right: 0;
 }
 
-.mess button {
+.mess-button {
     background-color: #2774DF;
     border-radius: 50px;
-    padding: 3.5px 3px 0 3px;
+    padding: 4px 4px 3px 4px;
     margin-left: 93%;
 }
 
 .mess-img {
-    width: 40px;
-    height: 35px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 .box-chat {
